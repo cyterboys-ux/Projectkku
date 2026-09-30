@@ -1,736 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hafiz Al Farabi — Guru, Desainer & Pembuat Robot</title>
+<meta name="description" content="Portofolio Hafiz Al Farabi: pengajar di Indonesia dan Thailand, desainer grafis, pembuat game Scratch dan robot Tinybit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body data-page="beranda">
 
-<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html" aria-current="page">Beranda</a></li>
+        <li><a class="link" href="tentang.html">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html">Pengalaman</a></li>
+        <li><a class="link" href="skill.html">Skill</a></li>
+        <li><a class="link" href="proyek.html">Proyek</a></li>
+        <li><a class="link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">My<span>Profile</span></h2>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- Hero / Home -->
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-            <p class="small-text">HELLO, I'M</p>
-
-            <h1>Your <span>Name</span></h1>
-
-            <h2>Student & Beginner Developer</h2>
-
-            <p>
-                Welcome to my personal website.
-                I'm interested in technology, design, coding,
-                and learning new things.
-            </p>
-
-            <a href="#about" class="button">About Me</a>
+<main>
+<section class="page">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Hafiz Al Farabi</h1>
+        <p class="role">Guru yang suka membuat: game, robot, poster, dan logo. Sudah mengajar di dua sekolah di Indonesia dan satu sekolah di Thailand.</p>
+        <div class="btns">
+          <a class="btn primary" href="proyek.html">Lihat proyek</a>
+          <a class="btn ghost" href="kontak.html">Hubungi saya</a>
         </div>
-
-        <div class="hero-card">
-            <div class="profile-circle">
-                👨‍💻
-            </div>
-
-            <h3>Your Name</h3>
-            <p>Student • Designer • Developer</p>
+      </div>
+      <div class="stage" aria-label="Demo blok kode gaya Scratch">
+        <div class="stage-bar">
+          <button class="flag" id="flag" type="button" aria-label="Jalankan program">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3v18" stroke="#06281B" stroke-width="2.5" stroke-linecap="round"/><path d="M6 4h12l-3 4.5L18 13H6z" fill="#06281B"/></svg>
+            Jalankan
+          </button>
+          <span class="stage-hint">Klik bendera hijau</span>
         </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <p class="section-label">ABOUT ME</p>
-        <h2>Who Am I?</h2>
-
-        <div class="about-container">
-
-            <div class="about-box">
-                <h3>About Me</h3>
-
-                <p>
-                    Hello! My name is <strong>Your Name</strong>.
-                    I am a student who enjoys learning about technology,
-                    design, and programming.
-                </p>
-
-                <p>
-                    I like creating new things and improving my skills
-                    through different projects. This website is one
-                    of my projects as I learn web development.
-                </p>
-            </div>
-
-            <div class="info-box">
-
-                <div>
-                    <span>Name</span>
-                    <strong>Your Name</strong>
-                </div>
-
-                <div>
-                    <span>Status</span>
-                    <strong>Student</strong>
-                </div>
-
-                <div>
-                    <span>Interest</span>
-                    <strong>Technology & Design</strong>
-                </div>
-
-                <div>
-                    <span>Learning</span>
-                    <strong>HTML, CSS & JavaScript</strong>
-                </div>
-
-            </div>
-
+        <div id="blocks">
+          <div class="block hat">ketika 🏁 diklik</div>
+          <div class="block look" hidden>ucapkan <span class="arg">Halo, saya Hafiz!</span></div>
+          <div class="block ctl" hidden>ulangi <span class="arg">3</span> kali: ajar &amp; berkarya</div>
+          <div class="block mot" hidden>pergi ke <span class="arg">Thailand</span></div>
+          <div class="block look" hidden>ucapkan <span class="arg">Ayo berkenalan!</span></div>
         </div>
+      </div>
+    </div>
 
-    </section>
+    <div class="doors">
+      <a class="door" href="tentang.html">Tentang<small>Siapa saya</small></a>
+      <a class="door" href="pengalaman.html">Pengalaman<small>3 sekolah</small></a>
+      <a class="door" href="skill.html">Skill<small>Desain, kode, robot</small></a>
+      <a class="door" href="proyek.html">Proyek<small>Yang sudah dibuat</small></a>
+      <a class="door" href="kontak.html">Kontak<small>WhatsApp, IG, Gmail</small></a>
+    </div>
+  </div>
+</section>
+</main>
 
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
 
-    <!-- Skills -->
-    <section id="skills" class="section blue-section">
-
-        <p class="section-label">MY SKILLS</p>
-        <h2>What Can I Do?</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <div class="skill-icon">HTML</div>
-                <h3>HTML</h3>
-                <p>
-                    Creating the structure and content of websites.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">CSS</div>
-                <h3>CSS</h3>
-                <p>
-                    Designing websites with colors, layouts,
-                    animations, and responsive design.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">UI</div>
-                <h3>UI Design</h3>
-                <p>
-                    Creating clean and attractive interfaces
-                    using design tools.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">CODE</div>
-                <h3>Programming</h3>
-                <p>
-                    Learning programming and developing
-                    small projects.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-
-        <p class="section-label">MY PROJECTS</p>
-        <h2>Things I've Created</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <div class="project-image">
-                    Project 01
-                </div>
-
-                <div class="project-content">
-                    <h3>Personal Website</h3>
-
-                    <p>
-                        My first personal website using
-                        HTML and CSS.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <div class="project-image">
-                    Project 02
-                </div>
-
-                <div class="project-content">
-                    <h3>Design Project</h3>
-
-                    <p>
-                        A graphic design project created
-                        using a design application.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <div class="project-image">
-                    Project 03
-                </div>
-
-                <div class="project-content">
-                    <h3>Mini Project</h3>
-
-                    <p>
-                        A small project that I created
-                        while learning programming.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-
-        <p class="section-label">CONTACT</p>
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            Want to know more about me or my projects?
-            Feel free to contact me.
-        </p>
-
-        <a href="mailto:youremail@example.com" class="button">
-            Contact Me
-        </a>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Your Name. All Rights Reserved.</p>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
-2. style.css
-/* =========================
-   BASIC
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f9ff;
-    color: #172033;
-}
-
-
-/* =========================
-   NAVBAR
-========================= */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e4ecf7;
-}
-
-.navbar {
-    max-width: 1100px;
-    margin: auto;
-    padding: 18px 25px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #1261d6;
-}
-
-.logo span {
-    color: #172033;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #172033;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #1261d6;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    min-height: 100vh;
-    max-width: 1100px;
-    margin: auto;
-    padding: 130px 25px 80px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.small-text {
-    color: #1261d6;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
-
-.hero h1 {
-    font-size: 65px;
-    line-height: 1.1;
-    margin-bottom: 10px;
-}
-
-.hero h1 span {
-    color: #1261d6;
-}
-
-.hero h2 {
-    font-size: 22px;
-    color: #506078;
-    margin-bottom: 20px;
-}
-
-.hero-text > p {
-    color: #64748b;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-
-/* Profile Card */
-
-.hero-card {
-    width: 320px;
-    padding: 40px 30px;
-
-    text-align: center;
-
-    background: white;
-    border-radius: 25px;
-
-    box-shadow: 0 20px 50px rgba(18, 97, 214, 0.12);
-}
-
-.profile-circle {
-    width: 150px;
-    height: 150px;
-
-    margin: auto auto 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: linear-gradient(
-        135deg,
-        #1261d6,
-        #59a6ff
-    );
-
-    font-size: 65px;
-}
-
-.hero-card h3 {
-    font-size: 22px;
-}
-
-.hero-card p {
-    color: #718096;
-    font-size: 14px;
-}
-
-
-/* =========================
-   BUTTON
-========================= */
-
-.button {
-    display: inline-block;
-
-    padding: 13px 25px;
-
-    background: #1261d6;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 10px;
-
-    font-weight: 500;
-
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #0b4cae;
-    transform: translateY(-2px);
-}
-
-
-/* =========================
-   SECTION
-========================= */
-
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 25px;
-}
-
-.section-label {
-    color: #1261d6;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-}
-
-.section h2 {
-    font-size: 38px;
-    margin-bottom: 40px;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about-container {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 30px;
-}
-
-.about-box,
-.info-box {
-    background: white;
-    padding: 35px;
-    border-radius: 20px;
-
-    box-shadow: 0 10px 35px rgba(18, 97, 214, 0.08);
-}
-
-.about-box h3 {
-    margin-bottom: 15px;
-}
-
-.about-box p {
-    color: #64748b;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.info-box {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.info-box div {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.info-box span {
-    font-size: 12px;
-    color: #8090a5;
-}
-
-.info-box strong {
-    color: #172033;
-}
-
-
-/* =========================
-   SKILLS
-========================= */
-
-.blue-section {
-    max-width: none;
-
-    background: #0d47a1;
-    color: white;
-
-    padding-left: max(25px, calc((100% - 1050px) / 2));
-    padding-right: max(25px, calc((100% - 1050px) / 2));
-}
-
-.blue-section .section-label {
-    color: #8bc4ff;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.skill-card {
-    padding: 30px;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    border-radius: 18px;
-
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.13);
-}
-
-.skill-icon {
-    font-size: 14px;
-    font-weight: 700;
-
-    color: #8bc4ff;
-
-    margin-bottom: 20px;
-}
-
-.skill-card h3 {
-    margin-bottom: 10px;
-}
-
-.skill-card p {
-    color: #d7e7ff;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-
-/* =========================
-   PROJECTS
-========================= */
-
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.project-card {
-    overflow: hidden;
-
-    background: white;
-
-    border-radius: 18px;
-
-    box-shadow: 0 10px 35px rgba(18, 97, 214, 0.08);
-
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-image {
-    height: 170px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: linear-gradient(
-        135deg,
-        #1261d6,
-        #61b1ff
-    );
-
-    color: white;
-
-    font-weight: 600;
-}
-
-.project-content {
-    padding: 25px;
-}
-
-.project-content h3 {
-    margin-bottom: 10px;
-}
-
-.project-content p {
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-.project-link {
-    color: #1261d6;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-section {
-    text-align: center;
-}
-
-.contact-section > p:not(.section-label) {
-    color: #64748b;
-    margin-bottom: 25px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    padding: 25px;
-
-    text-align: center;
-
-    background: #081b3a;
-
-    color: #a8bdd9;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 800px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tentang — Hafiz Al Farabi</title>
+<meta name="description" content="Tentang Hafiz Al Farabi, pengajar yang belajar bersama murid lewat Scratch, robot, dan desain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="tentang">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html">Beranda</a></li>
+        <li><a class="link" href="tentang.html" aria-current="page">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html">Pengalaman</a></li>
+        <li><a class="link" href="skill.html">Skill</a></li>
+        <li><a class="link" href="proyek.html">Proyek</a></li>
+        <li><a class="link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page">
+  <div class="wrap">
+    <h2>Tentang saya</h2>
+    <div class="about">
+      <div>
+        <p class="statement">Saya senang belajar dengan cara membuat sesuatu bersama murid.</p>
+        <p>Saya Hafiz Al Farabi, seorang pengajar. Di kelas, saya mengajak murid belajar lewat game Scratch, robot Tinybit, dan desain visual.</p>
+        <p>Di luar kelas, saya terbiasa berpidato di depan murid dan banyak orang, serta pernah berjualan kecil-kecilan di sekolah. Saya juga berbahasa Inggris, jadi nyaman mengajar di lingkungan internasional.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>3 sekolah</strong><span>2 di Indonesia, 1 di luar negeri</span></div>
+        <div class="fact"><strong>7+ game Scratch</strong><span>dibuat sendiri</span></div>
+        <div class="fact"><strong>20+ poster</strong><span>ditambah ilustrasi dan logo</span></div>
+      </div>
+    </div>
+    <div class="pager"><a href="index.html">← Beranda</a><a href="pengalaman.html">Pengalaman →</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pengalaman — Hafiz Al Farabi</title>
+<meta name="description" content="Pengalaman mengajar Hafiz Al Farabi di SDIT Harapan Umat Karawang, SDI Assalam Joglo, dan Sekolah Darul Hikmah Thailand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="pengalaman">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html">Beranda</a></li>
+        <li><a class="link" href="tentang.html">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html" aria-current="page">Pengalaman</a></li>
+        <li><a class="link" href="skill.html">Skill</a></li>
+        <li><a class="link" href="proyek.html">Proyek</a></li>
+        <li><a class="link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page">
+  <div class="wrap">
+    <h2>Pengalaman mengajar</h2>
+    <p class="lead">Tiga sekolah, dari Karawang sampai Thailand.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="where">Indonesia</div>
+        <h3>SDIT Harapan Umat Karawang</h3>
+        <p>Pengalaman mengajar pertama saya.</p>
+      </div>
+      <div class="step">
+        <div class="where">Indonesia</div>
+        <h3>SDI Assalam Joglo</h3>
+        <p>Pengalaman mengajar kedua, di Joglo.</p>
+      </div>
+      <div class="step">
+        <div class="where">Internasional</div>
+        <h3>Sekolah Darul Hikmah, Thailand</h3>
+        <p>Mengajar di luar negeri bersama murid dan rekan dari budaya yang berbeda.</p>
+      </div>
+    </div>
+
+    <div class="extra">
+      <div>
+        <h3>Berjualan kecil-kecilan di sekolah</h3>
+        <p>Belajar mengatur dagangan, melayani pembeli, dan bertanggung jawab atas usaha sendiri.</p>
+      </div>
+      <div>
+        <h3>Pidato di depan murid dan banyak orang</h3>
+        <p>Terbiasa berbicara di depan kelas maupun audiens yang lebih besar.</p>
+      </div>
+    </div>
+    <div class="pager"><a href="tentang.html">← Tentang</a><a href="skill.html">Skill →</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skill — Hafiz Al Farabi</title>
+<meta name="description" content="Skill Hafiz Al Farabi: Canva, Affinity, Figma, Scratch, robot, Bahasa Inggris, dan public speaking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="skill">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html">Beranda</a></li>
+        <li><a class="link" href="tentang.html">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html">Pengalaman</a></li>
+        <li><a class="link" href="skill.html" aria-current="page">Skill</a></li>
+        <li><a class="link" href="proyek.html">Proyek</a></li>
+        <li><a class="link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page">
+  <div class="wrap">
+    <h2>Skill</h2>
+    <p class="lead">Alat yang saya pakai untuk mengajar dan berkarya.</p>
+
+    <div class="skill-groups">
+      <div>
+        <h3>Desain</h3>
+        <div class="tiles">
+          <div class="tile"><span class="ic">🎨</span>Canva</div>
+          <div class="tile"><span class="ic">✏️</span>Affinity</div>
+          <div class="tile"><span class="ic">📐</span>Figma</div>
+        </div>
+      </div>
+      <div>
+        <h3>Coding dan robot</h3>
+        <div class="tiles">
+          <div class="tile"><span class="ic">🐱</span>Scratch</div>
+          <div class="tile"><span class="ic">🤖</span>Membuat robot</div>
+        </div>
+      </div>
+      <div>
+        <h3>Komunikasi</h3>
+        <div class="tiles">
+          <div class="tile"><span class="ic">🌍</span>Bahasa Inggris</div>
+          <div class="tile"><span class="ic">🎤</span>Public speaking</div>
+        </div>
+      </div>
+    </div>
+    <div class="pager"><a href="pengalaman.html">← Pengalaman</a><a href="proyek.html">Proyek →</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proyek — Hafiz Al Farabi</title>
+<meta name="description" content="Proyek Hafiz Al Farabi: robot Tinybit, game Scratch, poster, ilustrasi Affinity, dan logo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="proyek">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html">Beranda</a></li>
+        <li><a class="link" href="tentang.html">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html">Pengalaman</a></li>
+        <li><a class="link" href="skill.html">Skill</a></li>
+        <li><a class="link" href="proyek.html" aria-current="page">Proyek</a></li>
+        <li><a class="link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page">
+  <div class="wrap">
+    <h2>Proyek</h2>
+    <p class="lead">Beberapa hal yang sudah saya buat.</p>
+
+    <div class="cols">
+      <div class="col">
+        <div class="big">3</div>
+        <h3>Robot Tinybit</h3>
+        <ul>
+          <li><b>Hand Gesture</b><span>Bergerak mengikuti gerakan tangan.</span></li>
+          <li><b>Controller</b><span>Dikendalikan dengan controller.</span></li>
+          <li><b>Line Follower</b><span>Berjalan mengikuti garis.</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="big">7+</div>
+        <h3>Game Scratch</h3>
+        <ul>
+          <li><b>Game buatan sendiri</b><span>Lebih dari tujuh game, cocok untuk belajar logika pemrograman.</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="big">20+</div>
+        <h3>Desain grafis</h3>
+        <ul>
+          <li><b>Poster</b><span>Lebih dari 20 desain poster.</span></li>
+          <li><b>Ilustrasi</b><span>Dibuat dengan Affinity.</span></li>
+          <li><b>Logo</b><span>Dirancang sesuai kebutuhan.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pager"><a href="skill.html">← Skill</a><a href="kontak.html">Kontak →</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontak — Hafiz Al Farabi</title>
+<meta name="description" content="Hubungi Hafiz Al Farabi lewat WhatsApp, Instagram, atau Gmail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="kontak">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Hafiz Al Farabi</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a class="link" href="index.html">Beranda</a></li>
+        <li><a class="link" href="tentang.html">Tentang</a></li>
+        <li><a class="link" href="pengalaman.html">Pengalaman</a></li>
+        <li><a class="link" href="skill.html">Skill</a></li>
+        <li><a class="link" href="proyek.html">Proyek</a></li>
+        <li><a class="link" href="kontak.html" aria-current="page">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="page">
+  <div class="wrap">
+    <h2>Mari berkenalan</h2>
+    <p class="lead">Untuk kerja sama, mengajar, atau sekadar bertanya, silakan hubungi saya.</p>
+
+    <div class="links">
+      <a class="link-row" href="https://wa.me/6285122994022" target="_blank" rel="noopener">
+        <small>WhatsApp</small><b>+62 851 2299 4022</b><span class="go">Kirim pesan</span>
+      </a>
+      <a class="link-row" href="https://www.instagram.com/fizal0034" target="_blank" rel="noopener">
+        <small>Instagram</small><b>@fizal0034</b><span class="go">Buka profil</span>
+      </a>
+      <a class="link-row" href="mailto:fizalfarabi@gmail.com">
+        <small>Gmail</small><b>fizalfarabi@gmail.com</b><span class="go">Tulis email</span>
+      </a>
+    </div>
+    <div class="pager"><a href="proyek.html">← Proyek</a><a href="index.html">Kembali ke beranda</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Hafiz Al Farabi</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
